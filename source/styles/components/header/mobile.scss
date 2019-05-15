@@ -1,3 +1,17 @@
 .header {
-    background: yellow;
+
+    .logo {
+        padding: 0 0 20px;
+    }
+
+    nav {
+
+        &::before {
+            content: url('../../../images/header/Menu\ Button.png');
+        }
+    }
+
+    li {
+        display: none;
+    }
 }
