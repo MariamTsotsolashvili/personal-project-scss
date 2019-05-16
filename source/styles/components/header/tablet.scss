@@ -1,17 +1,17 @@
 .header {
 
-    .logo {
-        padding: 0 0 20px;
-    }
+    .container {
 
-    nav {
-
-        &::before {
-            content: url('../../../images/header/Menu\ Button.png');
+        &::after {
+            content: url(/images/header/Menu\ Button.png);
         }
-    }
 
-    li {
-        display: none;
+        .logo {
+            padding: 0 0 20px;
+        }
+
+        nav {
+            display: none;
+        }
     }
 }
