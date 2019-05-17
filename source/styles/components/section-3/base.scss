@@ -1,0 +1,130 @@
+@import 'pallete';
+@import 'reset';
+
+.section-3 {
+    padding: 140px 0 150px;
+    background-color: $background;
+
+    .services-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 127px;
+
+    & h3 {
+        position: relative;
+        padding-bottom: 25px;
+        color: $white;
+        font-family: 'Raleway', sans-serif;
+        font-size: 31px;
+        font-weight: 600;
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: 5px;
+            width: 100%;
+            height: 5px;
+            border-bottom: 1px solid $white;
+                }
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 35px;
+            height: 17px;
+            transform: translateX(-50%);
+            background-color: $background;
+            background-image: url(/images/services.png);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+
+}
+
+    .items {
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+        width: 1173px;
+        margin: 0 auto;
+
+        .item {
+            position: relative;
+            width: 295px;
+            text-align: center;
+
+            &::before {
+                content: '';
+                display: inline-block;
+                width: 136px;
+                height: 163px;
+                background-image: url(/images/polygon.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 100%;
+            }
+
+            &:hover {
+
+                &::before {
+                    background-image: url(/images/polygon.svg), url(/images/polygon-fill.svg);
+                    background-position: center, center;
+                    background-size: 92%;
+                }
+            }
+
+            &::after {
+                content: '';
+                display: inline-block;
+                position: absolute;
+                top: 68px;
+                right: 0;
+                left: -4px;
+                width: 28px;
+                height: 26px;
+                margin: 0 auto;
+                background-image: url(/images/stat.svg);
+                background-repeat: no-repeat;
+            }
+
+            &.diagram::after {
+                top: 68px;
+                left: -4px;
+                background-image: url(/images/stat.svg);
+            }
+
+            &.people::after {
+                top: 71px;
+                left: -1px;
+                background-image: url(/images/visitors.svg);
+            }
+
+            &.sales::after {
+                top: 71px;
+                left: 1px;
+                background-image: url(/images/sales.svg);
+            }
+
+            h3 {
+                margin: 33px 0 15px;
+                color: $btn-1;
+                font-family: 'Raleway', sans-serif;
+                font-size: 20px;
+                font-weight: 700;
+            }
+
+            p {
+                margin-left: 1px;
+                color: $white;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 14px;
+                letter-spacing: .02em;
+                line-height: 22px;
+            }
+        }
+    }
+}

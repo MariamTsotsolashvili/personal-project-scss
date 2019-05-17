@@ -13,6 +13,7 @@
         width: 1170px;
         height: 100%;
         margin: auto;
+        margin-bottom: 127px;
 
         .header-of-section-2 {
             display: flex;
@@ -49,7 +50,7 @@
                     height: 17px;
                     transform: translateX(-50%);
                     background-color: $white;
-                    background-image: url(/images/Speak-Icon.png);
+                    background-image: url(/images/speak.png);
                     background-repeat: no-repeat;
                     background-position: center;
                 }
@@ -126,14 +127,14 @@
                         display: flex;
 
                         &::before {
-                            content: url(/images/FEATURES-ONE.png);
+                            content: url(/images/features-one.png);
                             margin-right: 29px;
                         }
 
                         &.location {
 
                             &::before {
-                                content: url(/images/FEATURES-TWO.png);
+                                content: url(/images/features-two.png);
                                 margin-right: 29px;
                             }
                         }
@@ -141,7 +142,7 @@
                         &.heart {
 
                             &::before {
-                                content: url(/images/FEATURES-THREE.png);
+                                content: url(/images/features-three.png);
                                 margin-right: 29px;
                             }
                         }
@@ -149,7 +150,7 @@
                         &.note {
 
                             &::before {
-                                content: url(/images/FEATURES-FOUR.png);
+                                content: url(/images/features-four.png);
                                 margin-right: 29px;
                             }
                         }
