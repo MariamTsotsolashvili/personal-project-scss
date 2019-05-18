@@ -55,30 +55,6 @@
                     background-position: center;
                 }
             }
-
-            .speaker {
-                display: flex;
-
-                img {
-                    margin: 0 10px;
-                }
-
-                &::before {
-                    content: '';
-                    display: inline-block;
-                    width: 30px;
-                    height: 1.1px;
-                    color: $lines;
-                }
-
-                &::after {
-                    content: '';
-                    display: inline-block;
-                    width: 30px;
-                    height: 1px;
-                    color: $lines;
-                }
-            }
         }
 
         .content {
@@ -131,27 +107,15 @@
                             margin-right: 29px;
                         }
 
-                        &.location {
+                        $list: (location: two, heart: three, note: four);
 
-                            &::before {
-                                content: url(/images/features-two.png);
-                                margin-right: 29px;
-                            }
-                        }
+                        @each $i, $num in $list {
 
-                        &.heart {
+                            &.#{$i} {
 
-                            &::before {
-                                content: url(/images/features-three.png);
-                                margin-right: 29px;
-                            }
-                        }
-
-                        &.note {
-
-                            &::before {
-                                content: url(/images/features-four.png);
-                                margin-right: 29px;
+                                &::before {
+                                    content: url(/images/features-#{$num}.png);
+                                }
                             }
                         }
                     }
