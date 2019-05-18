@@ -16,6 +16,14 @@
             flex-direction: column;
             align-items: center;
 
+            h1{
+                font-size: 24px;
+            }
+
+            .text-pc-header {
+                margin-bottom:54px;
+            }
+
             .content-img {
                 margin-right: 0;
                 margin-bottom: 35px;
@@ -31,20 +39,18 @@
                     .element {
 
                         &::before {
-                            content: url(../../../images/check.png);
+                            content: url(/images/check.png);
                         }
 
-                        &.location {
+                        $list: location, heart;
 
-                            &::before {
-                                content: url(../../../images/check.png);
-                            }
-                        }
+                        @each $class in $list {
 
-                        &.heart {
+                            &.#{$class} {
 
-                            &::before {
-                                content: url(../../../images/check.png);
+                                &::before {
+                                    content: url(/images/check.png);
+                                }
                             }
                         }
 
